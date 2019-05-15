@@ -212,7 +212,7 @@ DEPENDENCIES
   bootstrap (~> 4.0.0)
   byebug
   coffee-rails (~> 4.2)
-  devise
+  devise (>= 4.6.0)
   jbuilder (~> 2.5)
   jquery-rails
   listen (>= 3.0.5, < 3.2)

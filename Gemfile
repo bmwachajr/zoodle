@@ -37,7 +37,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 # authentication with devise
-gem 'devise'
+gem 'devise', '>= 4.6.0'
 gem 'bootstrap' , '~> 4.0.0'
 gem 'jquery-rails'
 
