@@ -1,36 +1,43 @@
 <div id="devise">
-  <div class="login-header">
-    <div class="login-header-section">
-      <div class="login-img">
-        <img src=""/>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-5 login-form-section col align-self-center">
+        <div class="login-header">
+          <div class="login-header">
+            <div class="login-header-section">
+              <div class="login-img">
+                <img src=""/>
+              </div>
+              <p>Signin to your account</p>
+            </div>
+          </div>
+
+          <div class="login-body">
+            <div class="login-body-section">
+              <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+                <div class="form-input">
+                  <%= f.label :email %><br />
+                  <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control form-control-lg" %>
+                </div>
+
+                <div class="form-input">
+                  <%= f.label :password %><br />
+                  <%= f.password_field :password, autocomplete: "current-password", class: "form-control form-control-lg" %>
+                </div>
+
+                <div class="form-input">
+                  <%= f.submit "Log in", class: "btn btn-lg btn-success" %>
+                </div>
+              <% end %>
+
+              <%= render "devise/shared/links" %>
+
+            </div>
+          </div>
+        </div>
       </div>
-      <p>Signin to your account</p>
+      <div class="col-md-8">
+      </div>
     </div>
   </div>
-
-  <div class="login-body">
-    <div class="login-body-section">
-      <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-        <div class="form-input">
-          <%= f.label :email %><br />
-          <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control form-control-lg" %>
-        </div>
-
-        <div class="form-input">
-          <%= f.label :password %><br />
-          <%= f.password_field :password, autocomplete: "current-password", class: "form-control form-control-lg" %>
-        </div>
-
-        <div class="form-input">
-          <%= f.submit "Log in", class: "btn btn-lg btn-success" %>
-        </div>
-      <% end %>
-
-      <%= render "devise/shared/links" %>
-
-    </div>
-  </div>
-
-  
-
 </div>
