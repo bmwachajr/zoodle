@@ -1,0 +1,31 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#devise {
+    .login-header {
+        text-align: center;
+        
+        .login-header-section {
+            display: inline-block;
+
+            h2 {
+                font-size: 25px;
+                margin: 10px;
+            }
+
+            .login-img {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                background-color: #E6E6E6;
+                display: inline-block;
+                overflow: hidden;
+            }
+        }
+    }
+
+    .login-body {
+        
+    }
+}
