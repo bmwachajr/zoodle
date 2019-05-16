@@ -2,13 +2,19 @@
     <div class="container">
         <div class="row">
             <%= render "shared/sidebar" %>
-            <div class="col-md-8 canvas">
+            <div class="col-md-9 canvas">
                 <div class="title-section">
                     <h3>Recent Activity</h3>
                 </div>
-
-                <div class="row">
-                    <%= render "shared/recent_customers" %>
+                
+                <div class="container">
+                    <div class="row">
+                        <%# recent recent_customers %>
+                        <%= render "shared/recent_customers" %>
+                        
+                        <%# recent services %>
+                        <%= render "shared/recent_services" %>
+                    </div>
                 </div>
             </div>
         </div>
