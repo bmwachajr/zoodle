@@ -1,0 +1,59 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#dashboard-sidebar {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    min-height:100%;
+    padding: 0;
+    position: relative;
+
+    .logo-header {
+        padding: 20px;
+        padding-left: 30px;
+        background-color: darkgreen;
+        color: white;
+
+        .logo-img {
+            background-color: white;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+    }
+
+    .profile-header {
+        padding: 60px 20px 20px 0px;
+        padding-left: 30px;
+        background-color: rgb(1, 68, 1);
+        color: white;
+
+        h2 {
+            font-size: 20px;
+        }
+
+        a {
+            color: rgb(204, 199, 199);
+        }
+    }
+
+    .dashboard-tools {
+        .list-group-item {
+            padding: 20px 20px 20px 30px;
+        }
+
+        .badge-custom {
+            background-color:  rgb(1, 68, 1);
+            color: rgb(196, 196, 196);
+        }
+    }
+
+    .sidebar-footer {
+        position: absolute;
+        bottom: 0;
+        padding: 20px 20px 20px 30px;
+        color: #B9B9B9;
+    }
+}
