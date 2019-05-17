@@ -1,37 +1,48 @@
-<p id="notice"><%= notice %></p>
+<div id="customers">
+    <div class="container">
+        <div class="row">
+            <%= render "shared/sidebar" %>
+            <div class="col-md-9 canvas">
+                <div class="title-section">
+                    <div class="d-flex justify-content-between">
+                      <h3>Customers</h3>
+                      <%= link_to 'New Customer', new_customer_path, class: "btn btn-custom" %>
+                    </div>
+                </div>
 
-<h1>Customers</h1>
+                <p id="notice"><%= notice %></p>
 
-<table>
-  <thead>
-    <tr>
-      <th>Firstname</th>
-      <th>Lastname</th>
-      <th>Gender</th>
-      <th>Email</th>
-      <th>Date-of-birth</th>
-      <th>Phone</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+                <div class="container">
+                    <div class="row">
+                      <table class="table table-borderless customer-list">
+                        <thead>
+                          <tr>
+                            <th scope="col">Customer</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Gender</th>
+                            <th scope="col">DOB</th>
+                            <th>Phone</th>
+                            <th cope="col" colspan="3">Action</th>
+                          </tr>
+                        </thead>
 
-  <tbody>
-    <% @customers.each do |customer| %>
-      <tr>
-        <td><%= customer.firstname %></td>
-        <td><%= customer.lastname %></td>
-        <td><%= customer.gender %></td>
-        <td><%= customer.email %></td>
-        <td><%= customer.date-of-birth %></td>
-        <td><%= customer.phone %></td>
-        <td><%= link_to 'Show', customer %></td>
-        <td><%= link_to 'Edit', edit_customer_path(customer) %></td>
-        <td><%= link_to 'Destroy', customer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Customer', new_customer_path %>
+                        <tbody>
+                          <% @customers.each do |customer| %>
+                            <tr>
+                              <td class="name-space"><div class="avatar"></div><div class="name"><%= customer.firstname + " " + customer.lastname %></div></td>
+                              <td><%= customer.email %></td>
+                              <td><span class="badge badge-success"><%= customer.gender %></span></td>
+                              <td><%= customer.date_of_birth %></td>
+                              <td><%= customer.phone %></td>
+                              <td><%= link_to 'Edit', edit_customer_path(customer) %></td>
+                              <td><%= link_to 'Delete', customer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                            </tr>
+                          <% end %>
+                        </tbody>
+                      </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,3 +1,74 @@
 // Place all the styles related to the Customers controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#customers {
+    background-color: #F2F2F2;
+    width: 100%;
+    height: 100%;
+    position: absolute; top: 0; left: 0;
+    color: #828282;
+
+    .container, .row {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        min-height:100%;
+        max-width: 100vw;
+    }
+
+    .title-section {
+        padding: 20px 0 0 10px;
+
+        h3 {
+          font-size: 20px;
+        }
+
+        .btn-custom {
+            background-color: #0D6219 !important;
+            color: white;
+        }
+    }
+
+    .canvas {
+        margin: 0;
+        padding: 20px;
+        padding-left: 50px;
+        height: 100%;
+        min-height:100%;
+
+        .customer-list {
+            background-color: white;
+            height: 85vh;
+
+            tbody {
+                td {
+                    padding-top: 20px;
+                }
+            }
+        }
+
+    }
+
+    .badge {
+        padding: 5px;
+    }
+
+    .avatar {
+        height: 50px;
+        width: 50px;
+        background-color: rgb(219, 219, 219);
+        border-radius: 50%;
+        float: left;
+        margin-right: 20px;
+    }
+
+    .name {
+        padding-top: 10px;
+    }
+
+    .name-space {
+        width: 250px;
+        padding-top: 10px !important;
+    }
+}

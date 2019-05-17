@@ -5,7 +5,7 @@ class CreateCustomers < ActiveRecord::Migration[5.2]
       t.string :lastname
       t.string :gender
       t.string :email
-      t.date :date-of-birth
+      t.date :date_of_birth
       t.string :phone
 
       t.timestamps
