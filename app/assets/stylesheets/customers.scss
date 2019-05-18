@@ -36,14 +36,44 @@
         padding-left: 50px;
         height: 100%;
         min-height:100%;
+        overflow: hidden;
+
+        .container {
+            height: 50vh;
+            max-height: 50vh;
+            overflow: hidden;
+        }
+
+        .title-section {
+            padding: 20px 0 20px 20px;
+
+            h3 {
+              font-size: 20px;
+            }
+        }
 
         .customer-list {
             background-color: white;
             height: 85vh;
+            max-height: 85vh;
+            overflow: scroll;
 
+            th { position: sticky; top: 0; background-color: white; }
+            
             tbody {
+                tr {
+                    display: table-row;
+                    vertical-align: inherit;
+                    border-color: inherit;
+                    height: 50px;
+                    max-height: 50px;
+                }
+
                 td {
                     padding-top: 20px;
+                    vertical-align: unset !important;
+                    height: 50px;
+                    max-height: 50px;
                 }
             }
         }
