@@ -3,4 +3,4 @@ rvm:
  - 2.4.1
  - jruby
 script:
- - bin/rails rspec
+ - rspec
