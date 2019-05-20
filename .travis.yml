@@ -1,6 +1,6 @@
 language: ruby
 rvm:
- - 2.4.1p111
+ - 2.2
  - jruby
 script:
  - in rails rspec
